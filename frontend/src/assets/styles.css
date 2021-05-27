@@ -16,6 +16,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 button {
@@ -26,3 +27,87 @@ a {
     text-decoration: none;
 }
 
+/* HEADER */
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-background {
+  background: var(--bg-base);
+  background: linear-gradient(
+    302deg,
+    var(--bg-gradient-a) 0%,
+    var(--bg-gradient-b) 100%
+  );
+  width: 100vw;
+  height: 250px;
+  z-index: 1;
+}
+
+.header-content {
+  width: 90%;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  margin-top: -120px;
+}
+
+.header-cover {
+  width: 150px;
+  height: 150px;
+  background: var(--dark);
+}
+
+.info {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark);
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* CONTROLS */
+.control-container {
+    width: 100vw;
+    height: 100px;
+    background: var(--dark);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .current {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .control-button {
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+  }
+  
+  .button-icon {
+    width: 16px;
+    height: 16px;
+  }
