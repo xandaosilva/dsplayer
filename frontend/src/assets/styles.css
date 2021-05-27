@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 
+:root {
+    --dark: #121212;
+    --dark-36: #212121a1;
+    --gray: #292929;
+    --light: #f2f2f2;
+    --bg-base: rgb(34, 193, 195);
+    --bg-gradient-a: rgba(34, 193, 195, 1);
+    --bg-gradient-b: rgba(253, 187, 45, 1);
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,4 +25,4 @@ button {
 a {
     text-decoration: none;
 }
-  
+
